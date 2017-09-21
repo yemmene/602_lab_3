@@ -1,4 +1,4 @@
-
+// A minor change!
 public class InheritanceDemo
 {
 	/**
