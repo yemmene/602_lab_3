@@ -1,25 +1,24 @@
 
-public class CrookedDie2 extends AbstractDie
+public class CrookedDie2 extends Die
 {
 
 	public CrookedDie2()
 	{
-		// StdOut.println("In CrookedDie2()");
+		
 	}
 
-	public int getLastRoll()
-	{
-		return 3;
-	}
 
 	public void roll()
 	{
-		// do nothing...
+		if (super.getLastRoll() == 6)
+			setLastRoll(1);
+		else
+			setLastRoll(super.getLastRoll()+1);
 	}
-
+	
 	public String toString()
 	{
-		return "A CrookedDie2 object, and... " + super.toString();
+		return "A CrookedDie2 object, subclassing..." + super.toString();
 	}
 
 }
