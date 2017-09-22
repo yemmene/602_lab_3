@@ -31,11 +31,11 @@ public class Die extends Object implements Rollable
 		// this.lastRoll = (int) (Math.random() * 6 + 1);
 	}
 
-//	public String toString() // can you change this to protected visiblity?
-//	{
-//		return "A Die object with lastRoll == " + this.getLastRoll() + super.toString();
-//		// does getLastRoll() *always* call the method above?
-//	}
+	public String toString() // can you change this to protected visiblity?
+	{
+		return "A Die object with lastRoll == " + this.getLastRoll() + super.toString();
+		// does getLastRoll() *always* call the method above?
+	}
 
 	public String toString(int msg) // Overloading... but NOT overriding!
 	{

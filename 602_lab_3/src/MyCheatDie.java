@@ -1,5 +1,5 @@
 
-public class MyCheatDie extends Die
+public class MyCheatDie extends CrookedDie1
 {
 	// Lab 3e: add your own toString() below, returning
 	// whatever you'd want
@@ -10,4 +10,9 @@ public class MyCheatDie extends Die
 																				// super.toString();
 	}
 	// Lab 3f: add your own getLastRoll(), returning whatever you want
+	
+	public int getLastRoll()
+	{
+		return 1+ (super.getLastRoll() + 5) % 6;
+	}
 }
