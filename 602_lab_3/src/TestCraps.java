@@ -20,7 +20,6 @@
  */
 public class TestCraps
 {
-	public static final int NUM_TO_PLAY = 10;
 
 	/**
 	 * CrapsGame represents a single game of craps, which contains a single Dice
@@ -102,6 +101,8 @@ public class TestCraps
 		StdOut.println("Won " + numWins + "/" + numPlays + "==" + 100.0 * (0.0 + numWins) / numPlays + "%");
 
 	}
+	
+	public static final int NUM_TO_PLAY = 1000000;
 
 	public static void main(String[] args)
 	{
