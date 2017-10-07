@@ -15,7 +15,7 @@ public class InheritanceDemo
 
 		// Lab 3a:
 		//
-		// Add output (println()) code to last line of both Die and CrookedDie1
+		// output (println()) code to last line of both Die and CrookedDie1
 		// constructors, demonstrating constructor chaining from CrookedDie1 to
 		// Die. 
 		// 
@@ -49,7 +49,7 @@ public class InheritanceDemo
 		// needed). Clear all breakpoints, then set one on the statement below,
 		// and repeat Step Into through describe() call.
 
-		Die whatIsThis = (Math.random() < 0.5) ? die1 : crooked1;
+		Die whatIsThis = (Math.random() < 0.6) ? die1 : crooked1;
 
 		describe("Can we ever determine the actual type of whatsThis at runtime! ", whatIsThis);
 

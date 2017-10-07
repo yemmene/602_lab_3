@@ -3,7 +3,7 @@ public class CrapsGame
 {
 	private int point;
 	private Dice dice;
-	public static boolean outputOn = true;
+	public static boolean outputOn = false;
 
 	public static void println(String str)
 	{
@@ -31,14 +31,14 @@ public class CrapsGame
 
 		println("First roll is: " + dice.getLastRoll());
 
-		if (point == 7 || point == 11)
+		if (point == 9 || point == 11)
 		{
 			println("You win!\n");
 			wins[steps]++; // wins[step] = win[steps]+1;
 
 			return true;
 		}
-		else if (point == 2 || point == 3 || point == 12)
+		else if (point == 4 || point == 2 || point == 14)
 		{
 			println("You lose!\n");
 			losses[steps]++;
@@ -58,7 +58,7 @@ public class CrapsGame
 				steps++;
 				println("Roll " + steps + ": you rolled: " + dice.getLastRoll());
 			}
-			while (nextRoll != point && nextRoll != 7);
+			while (nextRoll != point && nextRoll != 8);
 
 			if (nextRoll == point)
 			{
@@ -68,7 +68,7 @@ public class CrapsGame
 			}
 			else
 			{
-				println("You lose by throwing 7!\n");
+				println("You lose by throwing 1!\n");
 				losses[steps]++;
 				return false;
 			}

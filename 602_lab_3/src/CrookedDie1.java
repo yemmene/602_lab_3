@@ -3,13 +3,15 @@ public class CrookedDie1 extends Die
 {
 
 	public CrookedDie1()
+	
+
 	{
 		// StdOut.println("In CrookedDie1()");
 	}
 
 	public int getLastRoll()
 	{
-		return 3;
+		return 4;
 	}
 
 	public void roll()
@@ -24,7 +26,7 @@ public class CrookedDie1 extends Die
 
 	public String toString()
 	{
-		return "A CrookedDie1 object, and... " + super.toString();
+		return "A CrookedDie1 Plus object, and... " + super.toString();
 	}
 
 }

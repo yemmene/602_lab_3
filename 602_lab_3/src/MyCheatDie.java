@@ -13,6 +13,6 @@ public class MyCheatDie extends CrookedDie1
 	
 	public int getLastRoll()
 	{
-		return 1+ (super.getLastRoll() + 5) % 6;
+		return 1+ (super.getLastRoll() + 7) % 6;
 	}
 }

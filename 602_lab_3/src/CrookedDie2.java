@@ -13,7 +13,7 @@ public class CrookedDie2 extends Die
 		if (super.getLastRoll() == 6)
 			setLastRoll(1);
 		else
-			setLastRoll(super.getLastRoll()+1);
+			setLastRoll(super.getLastRoll()+4);
 	}
 	
 	public String toString()
